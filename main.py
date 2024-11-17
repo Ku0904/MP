@@ -198,11 +198,7 @@ def main():
     with st.sidebar:
         st.subheader("Setup")
         api_key = st.text_input("Google API Key", type="password", help="Enter your Google API key")
-        api_key1 = st.text_input("OpenAI API Key", type="password", help="Enter your OpenAI API key")
-        api_key2 = st.text_input("Ollama API Key", type="password", help="Enter your Ollama API key")
         uploaded_file = st.file_uploader("Upload Study Material", type=["txt", "pdf", "docx", "jpeg", "png"])
-        uploaded_file1 = st.file_uploader("Upload Study Material", type=["txt", "pdf", "docx", "jpeg", "png"])
-        uploaded_file2 = st.file_uploader("Upload Study Material", type=["txt", "pdf", "docx", "jpeg", "png"])
         subject = st.text_input("Study Subject", placeholder="e.g., Python Programming")
         difficulty = st.selectbox("Difficulty Level", ["Beginner", "Intermediate", "Advanced"])
         context = st.text_area("Study Goals", placeholder="What do you want to focus on?")
